@@ -15,6 +15,10 @@ import PackageDescription
 let package = Package(
     name: "SwiftPM",
     products: [
+        .executable(
+            name: "swift-build",
+            targets: ["swift-build"]
+        ),
         // The `libSwiftPM` set of interfaces to programatically work with Swift
         // packages.
         //
