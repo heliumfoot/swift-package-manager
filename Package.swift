@@ -263,7 +263,7 @@ import Darwin.C
 
 if getenv("SWIFTPM_BOOTSTRAP") == nil {
     package.dependencies += [
-        .package(url: "https://github.com/apple/swift-llbuild.git", .branch("master")),
+        .package(url: "https://github.com/apple/swift-llbuild.git", .branch("swift-5.0-branch")),
     ]
     package.targets.first(where: { $0.name == "SPMLLBuild" })!.dependencies += ["llbuildSwift"]
 }
